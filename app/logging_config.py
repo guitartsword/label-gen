@@ -13,7 +13,7 @@ LOGGING_CONFIG = {
     },
     'formatters': {
         'default': {
-            'format': '%(asctime)s %(name)s:%(lineno)d ' '%(levelname)s %(message)s',
+            'format': '%(asctime)s.%(msecs)03d %(name)s:%(lineno)d ' '%(levelname)s %(message)s',
             "datefmt": "%Y-%m-%dT%H:%M:%S",
         }
     },

@@ -37,7 +37,7 @@ def create_image(text1, text2, name=None, output_path='output/'):
 
     # Save the image as PNG
     create_folder(output_path)
-    output_file = f'{output_path}/{name or text1}.png'
+    output_file = f'{output_path}{name or text1}.png'
     image.save(output_file, dpi=(ppm, ppm))
     logger.info(f'done >>> {output_file}')
 
